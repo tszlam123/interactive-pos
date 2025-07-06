@@ -1,0 +1,31 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>POS System</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="pos-container">
+    <div class="categories">
+      <button onclick="filterCategory('Promo')">Promo</button>
+      <button onclick="filterCategory('All-Day Lunch')">All-Day Lunch</button>
+      <button onclick="filterCategory('Snacks')">Snacks</button>
+      <button onclick="filterCategory('Pillows & Mochi')">Pillows & Mochi</button>
+      <button onclick="filterCategory('Cha Chaan Teng')">Cha Chaan Teng</button>
+      <button onclick="filterCategory('Classics')">Classics</button>
+      <button onclick="filterCategory('Mango')">Mango</button>
+    </div>
+    <div class="items" id="item-list"></div>
+    <div class="order">
+      <h2>Order</h2>
+      <ul id="order-list"></ul>
+      <p>Total: $<span id="total">0.00</span></p>
+      <button onclick="clearOrder()">Clear</button>
+    </div>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
